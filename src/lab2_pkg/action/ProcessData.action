@@ -1,0 +1,6 @@
+int32[] numbers
+---
+bool success
+int32 total_processed
+---
+float32 progress
