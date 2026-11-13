@@ -1,0 +1,24 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    primary_pos_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    backup_pos_controller:
+      type: forward_command_controller/ForwardCommandController
+
+primary_pos_controller:
+  ros__parameters:
+    joints:
+      - joint1
+    interface_name: position
+
+backup_pos_controller:
+  ros__parameters:
+    joints:
+      - joint1
+    interface_name: position
